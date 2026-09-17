@@ -36,7 +36,6 @@ The data is used solely to populate the extension's workspace view and to genera
 
 | Permission | Why it is used |
 | --- | --- |
-| `activeTab` | Extract data from the current Etsy tab only when you click Capture |
 | `tabs` | Read the active tab's URL to determine whether it is a supported Etsy page |
 | `storage` | Store captured listings, batches, and preferences locally on your device |
 | `downloads` | Write the CSV/JSON file when you click an export button |
@@ -58,7 +57,6 @@ Extract publicly visible Etsy listing data from pages the user opens, store it l
 
 ### Permissions justification
 
-- **activeTab:** extraction runs only when the user clicks Capture, granting temporary access to the current Etsy tab.
 - **tabs:** determines whether the active tab is a supported Etsy page before extracting.
 - **storage:** saves captured listings and preferences locally via chrome.storage.local (never synced).
 - **downloads:** writes the CSV/JSON export file the user requests.
